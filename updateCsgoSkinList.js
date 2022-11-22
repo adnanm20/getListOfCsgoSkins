@@ -31,15 +31,14 @@ function getSite() {
 			});
 
 			let k = 0;
-			
+
 			root.querySelectorAll(".wikitable").forEach(table => {
-				
+
 				table.querySelectorAll('tr').forEach((row, idx) => {
-					if(idx == 0)
-					{
+					if (idx == 0) {
 						return;
 					}
-					
+
 					let skin = {};
 
 					skin.collection = collectionNames[k];
